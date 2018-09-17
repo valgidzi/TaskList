@@ -83,3 +83,9 @@ Processing by TasksController#show as HTML
 Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/tasks/10" for 127.0.0.1 at 2018-09-17 16:19:27 -0700
+Processing by TasksController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 404 Not Found in 0ms (ActiveRecord: 0.0ms)
+
+
