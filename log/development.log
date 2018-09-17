@@ -1,0 +1,25 @@
+  [1m[35m (391.7ms)[0m  [1m[35mCREATE DATABASE "TaskList_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (288.9ms)[0m  [1m[35mCREATE DATABASE "TaskList_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2018-09-17 12:26:22 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/valgidzi/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/valgidzi/.rvm/gems/ruby-2.5.1/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2018-09-17 13:54:04 -0700
+Processing by TasksController#index as HTML
+Completed 406 Not Acceptable in 76ms (ActiveRecord: 0.0ms)
+
+
+
+ActionController::UnknownFormat - TasksController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.:
+
+Started POST "/__better_errors/427f15478b3f79b3/variables" for 127.0.0.1 at 2018-09-17 13:54:14 -0700
