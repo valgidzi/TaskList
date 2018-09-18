@@ -1,13 +1,14 @@
-TASKS = [
-  'read POODR',
-  'grocery shopping',
-  'do laundry'
-]
+# TASKS = [
+#   'read POODR',
+#   'grocery shopping',
+#   'do laundry'
+# ]
 
 class TasksController < ApplicationController
 
   def index
-    @tasks = TASKS
+    # @tasks = TASKS
+    @tasks = Task.all
   end
 
   def show
