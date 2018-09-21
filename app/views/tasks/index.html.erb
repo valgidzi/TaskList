@@ -1,4 +1,5 @@
 <h2>Tasklist</h2>
+<%= link_to "Add a Task", new_task_path %>
 <ul>
   <% @tasks.each do |task| %>
     <li> <%= task.name %> </li>
