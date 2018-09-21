@@ -2,5 +2,6 @@
 <ul>
   <% @tasks.each do |task| %>
     <li> <%= task.name %> </li>
+    <%= link_to "(View Details)", task_path(task) %>
   <% end %>
 </ul>
