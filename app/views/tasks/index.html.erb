@@ -4,5 +4,6 @@
   <% @tasks.each do |task| %>
     <li> <%= task.name %> </li>
     <%= link_to "(View Details)", task_path(task) %>
+    <%= link_to "Edit Task", edit_task_path(task.id)%>
   <% end %>
 </ul>
