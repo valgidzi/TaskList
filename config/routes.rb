@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get '/tasks/:id/mark_complete', to: 'tasks#mark_complete', as: 'mark_complete_task'
 
+  get '/tasks/:id/unmark_complete', to: 'tasks#unmark_complete', as: 'unmark_complete_task'
+
   delete '/tasks/:id', to: 'tasks#destroy'
 
 
