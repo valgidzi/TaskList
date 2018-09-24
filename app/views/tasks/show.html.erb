@@ -1,5 +1,10 @@
 <h2>Task Details</h2>
 <p> <%= @task.name %> </p>
 <p> <%= @task.description %> </p>
+<% if @task.completion_date.nil? %>
+<p><%= "Not completed" %></p>
+<% else %>
+<p> <%= "Completed: #{@task.completion_date}" %> </p>
+<% end %>
 
 <%= link_to "All Tasks", tasks_path %>
