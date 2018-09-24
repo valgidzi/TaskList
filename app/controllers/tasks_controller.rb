@@ -55,4 +55,12 @@ class TasksController < ApplicationController
     @task.destroy
     redirect_to tasks_path
   end
+
+  def mark_complete
+    @task = Task.find_by(id: params[:id])
+
+    @task.completion_date = Time.now
+    @task.save
+    redirect_to tasks_path
+  end
 end
